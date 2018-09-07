@@ -7,6 +7,8 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 
+import com.example.demo.headfirstdemopractice.Observer.CurrentCoditionsDisplay;
+import com.example.demo.headfirstdemopractice.Observer.WeatherData;
 import com.example.demo.headfirstdemopractice.duck.Duck;
 import com.example.demo.headfirstdemopractice.duck.MallardDuck;
 
@@ -41,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
                 duck.performQuack();
                 break;
             case R.id.demo_observer_model:
+                CurrentCoditionsDisplay display = new CurrentCoditionsDisplay(new WeatherData());
+                display.display();
                 break;
         }
     }
