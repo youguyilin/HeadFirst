@@ -15,6 +15,6 @@ public abstract class PizzaStore {
         pizza.box();
         return pizza;
     }
-
     protected abstract Pizza createPizza(String type);
+
 }
